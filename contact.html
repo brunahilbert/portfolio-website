@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Bruna Hilbert Portfolio</title>
+    <link rel="shortcut icon" href="img/brunaIcon1.svg">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header class="page-header">
+        <img src="img/brunalogocolor.svg" class="page-header__item" alt="Personal logo of Bruna Hilbert">
+        <nav class="main-navigation page-header__item">
+            <ul role="menubar" class="navigation-list">
+                <!-- ROLE attribute assign more detailed, more explicit information, than screen readers can read more effectively the information -->
+                <li role="presentation">
+                    <a href="index.html" role="menuitem"
+                        class="navigation-list__item">Home</a>
+                </li>
+                <li role="presentation">
+                    <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
+                </li>
+                <li role="presentation">
+                    <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+                </li>
+                <li role="presentation">
+                    <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact">
+        <h1>Contact</h1>
+        Bruna Tamiris Hilbert<br>
+        Friedhofstraße 11<br>
+        70191 Stuttgart<br>
+        Deutschland<br>
+        <br>
+        Tel: <a href="tel:+49015216792540">+49 0152 1679-2540</a><br>
+        Email: <a
+            href="mailto:bruna.hilbertt@gmail.com?subject=We%20have%20awesome%20jobs%20waiting%20for%20you!&body=Hello%20Bruna%20Hilbert%2C%0D%0A%0D%0AI%20saw%20your%20profile%20online%20and%20wanted%20to%20reach%20out!">bruna.hilbertt@gmail.com</a><br>
+        <br>
+        <!-- Figure Out how to make the button display the contact-form!-->
+        <button type="button">Contact me</button>
+        <!-- It's necessary to organize! -->
+        <form action="" method="post" id="contact-form">
+            <label class="standard-label" for="firstname">First name: </label>
+            <input type="text" id="firstname" name="user_firstname" required>
+            *Required field
+
+            <label class="standard-label" for="lastname">Last Name: </label>
+            <input type="text" id="lastname" name="user_lastname" required>
+            *Required field
+
+            <label class="standard-label" for="email">E-mail: </label>
+            <input type="email" id="email" name="user_email" required>
+            *Required field
+
+            <label class="standard-label" for="telephone">Telephone: </label>
+            <input type="tel" id="telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" name="user_phone">
+
+            <label class="standard-label" for="message">Message: </label>
+            <textarea name="user_message" id="message" maxlength="240" required></textarea>
+            *Required field
+            Max. 240 characters
+
+            <input type="submit" class=" button messagebutton" value="Send message">
+        </form>
+    </main>
+
+    <footer class="page-footer">
+        <p>Find me on</p>
+        <div class="social-media">
+            <!-- Github logo -->
+            <img src="img/github_icon.svg" class="footer__icon" alt="Github icon">
+            <!-- Twitter logo -->
+            <img src="img/twitter_icon.svg" class="footer__icon" alt="Twitter icon">
+            <!-- LinkedIn logo -->
+            <img src="img/linkedin_icon.svg" class="footer__icon" alt="LinkedIn icon">
+        </div>
+    </footer>
+    <script src="js/tota11y.min.js"></scriptsrc></script>
+</body>
+
+</html>
