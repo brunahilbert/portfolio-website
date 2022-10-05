@@ -10,13 +10,13 @@ Links Color (Green): #2c665d;
 Grade Color (Light Green): #bbebe3;
  */
 
- :root {
+:root {
     --text-color: #333333;
     --button-color: #357b70;
     --visited-link-color: #173530;
     --primary-color: #bbebe3;
     --secondary-color: #2c665d;
-  }
+}
 
 
 * {
@@ -89,7 +89,6 @@ Grade Color (Light Green): #bbebe3;
 
 body {
     background-color: white;
-    /* TBD */
     color: var(--text-color);
     font-family: 'Cabin', sans-serif;
     font-weight: 400;
@@ -171,7 +170,6 @@ button:hover, button:focus,
     text-align: center;
     margin-top: 10px;
     background-color: var(--primary-color);
-
 }
 
 .footer__icon {
@@ -183,7 +181,6 @@ button:hover, button:focus,
     display: inline-block;
     width: 33%;
 }
-
 /* end grid fallback */
 
 
@@ -292,4 +289,4 @@ button:hover, button:focus,
 
 .bubble-square-bracket {
     animation-delay: 13s;
-} 
+}
