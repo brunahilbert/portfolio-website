@@ -240,19 +240,16 @@ button:hover, button:focus,
 }
 
 @keyframes opacity {
-    0% {
+    5% {
         opacity: 0
     }
-    5% {
+    10% {
+        opacity: 1
+    }
+    75% {
         opacity: 1
     }
     80% {
-        opacity: 1
-    }
-    90% {
-        opacity: 0
-    }
-    100% {
         opacity: 0
     }
 }
