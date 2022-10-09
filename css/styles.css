@@ -58,7 +58,6 @@ Grade Color (Light Green): #bbebe3;
 }
 
 .profile,
-.about,
 .contact {
   max-width: 700px;
   margin: 0 auto;
@@ -69,6 +68,17 @@ Grade Color (Light Green): #bbebe3;
   float: left;
   margin-right: 40px;
   border-radius: 50%;
+}
+
+.about {
+  max-width: 870px;
+  margin: auto;
+}
+
+.vector-animation {
+  width: 450px;
+  float: left;
+  margin-right: 20px;
 }
 
 .about,
@@ -88,7 +98,7 @@ Grade Color (Light Green): #bbebe3;
 
 .skill-table__cell {
   background-color: var(--primary-color);
-  padding: 7px 15px;
+  padding: 5px 10px;
 }
 
 body {
