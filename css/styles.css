@@ -226,8 +226,8 @@ button:focus,
 }
 
 .project-list__item:last-child {
-  grid-column: 3, 3;
-  grid-row: 1, 3;
+  grid-column: 3/ 3;
+  grid-row: 1/ 3;
 }
 
 @media all and (max-width: 500px) {
