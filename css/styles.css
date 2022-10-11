@@ -52,7 +52,7 @@ Grade Color (Light Green): #bbebe3;
 
 /* ---- PROFILE ----------------------------------------------------- */
 
-.profile {
+/* .profile {
   max-width: 700px;
   min-height: 500px;
   margin: auto;
@@ -64,6 +64,28 @@ Grade Color (Light Green): #bbebe3;
   float: left;
   margin-right: 40px;
   border-radius: 50%;
+} */
+
+.profile {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 750px;
+  padding: 130px 30px;
+  margin: auto;
+}
+
+.profile__portrait {
+  width: 250px;
+  margin-right: 40px;
+  border-radius: 50%;
+  grid-column: 1/ 1;
+  grid-row: 1/ 1;
+}
+
+.profile__message {
+  text-align: left;
+  grid-column: 2/ 4;
+  grid-row: 1/ 1;
 }
 
 /* ---- ABOUT ----------------------------------------------------- */
@@ -324,6 +346,26 @@ button:focus,
 
   .navigation-list li {
     margin: 2px 10px;
+  }
+
+  .profile {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 50px;
+  }
+
+  .profile__portrait {
+    width: 250px;
+    margin: auto;
+    padding-bottom: 20px;
+    grid-column: 1/ 1;
+    grid-row: 1/ 1;
+  }
+
+  .profile__message {
+    text-align: center;
+    grid-column: 1/ 1;
+    grid-row: 2/ 3;
   }
 }
 
