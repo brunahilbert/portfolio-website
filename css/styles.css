@@ -317,6 +317,10 @@ button:focus,
   .project-list {
     grid-template-columns: 1fr;
   }
+
+  h1 {
+    font-size: 22px;
+  }
 }
 
 @media all and (max-width: 550px) {
@@ -379,6 +383,7 @@ button:focus,
   /* Shared code between 0px -> 750px */
   .project-list {
     grid-gap: 10px;
+    padding: 10px;
   }
 
   .project-list__item:last-child {
