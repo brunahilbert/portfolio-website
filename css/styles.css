@@ -125,7 +125,7 @@ Grade Color (Light Green): #bbebe3;
 .contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 2px;
+  padding: 6px;
 }
 
 .contact-infos,
@@ -274,7 +274,6 @@ button:focus,
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-top: 10px;
   background-color: var(--primary-color);
 }
 
@@ -393,10 +392,6 @@ button:focus,
 
   .contact {
     grid-template-columns: 1fr;
-  }
-
-  h1 {
-    font-size: 22px;
   }
 }
 
