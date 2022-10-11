@@ -19,8 +19,7 @@
             <ul role="menubar" class="navigation-list">
                 <!-- ROLE attribute assign more detailed, more explicit information, than screen readers can read more effectively the information -->
                 <li role="presentation">
-                    <a href="index.html" role="menuitem"
-                        class="navigation-list__item">Home</a>
+                    <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
                 </li>
                 <li role="presentation">
                     <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
@@ -29,48 +28,40 @@
                     <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
                 </li>
                 <li role="presentation">
-                    <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a>
+                    <a href="contact.html" role="menuitem"
+                        class="navigation-list__item navigation-list__item--active">Contact</a>
                 </li>
             </ul>
         </nav>
     </header>
 
     <main class="contact">
-        <h1>Contact me</h1>
-        Bruna Tamiris Hilbert<br>
-        Friedhofstraße 11<br>
-        70191 Stuttgart<br>
-        Deutschland<br>
-        <br>
-        Tel: <a href="tel:+49015216792540">+49 0152 1679-2540</a><br>
-        Email: <a
-            href="mailto:bruna.hilbertt@gmail.com?subject=We%20have%20awesome%20jobs%20waiting%20for%20you!&body=Hello%20Bruna%20Hilbert%2C%0D%0A%0D%0AI%20saw%20your%20profile%20online%20and%20wanted%20to%20reach%20out!">bruna.hilbertt@gmail.com</a><br>
-        <br>
-        <!-- Figure Out how to make the button display the contact-form!-->
-        <button type="button">Contact me</button>
-        <!-- It's necessary to organize! -->
-        <form action="get-contact" method="post" id="contact-form">
-            <label class="standard-label" for="firstname">First name: </label>
-            <input type="text" id="firstname" name="user_firstname" required>
-            *Required field
+        <div class="contact-infos">
+            <h1>Contact me</h1>
+            Feel free to contact me using the form or my contacts below.<br>
+            <br>
+            Location: Stuttgart - Deutschland<br>
+            Tel: <a href="tel:+49015216792540">+49 0152 1679-2540</a><br>
+            Email: <a
+                href="mailto:bruna.hilbertt@gmail.com?subject=We%20have%20awesome%20jobs%20waiting%20for%20you!&body=Hello%20Bruna%20Hilbert%2C%0D%0A%0D%0AI%20saw%20your%20profile%20online%20and%20wanted%20to%20reach%20out!">bruna.hilbertt@gmail.com</a><br>
+        </div>
+        <form action="get-contact" method="post" class="contact-form">
 
-            <label class="standard-label" for="lastname">Last Name: </label>
-            <input type="text" id="lastname" name="user_lastname" required>
-            *Required field
+            <h1>Leave me a message</h1>
 
-            <label class="standard-label" for="email">E-mail: </label>
-            <input type="email" id="email" name="user_email" required>
-            *Required field
+            <label class="standard-label" for="email">Email: </label><br>
+            <input type="email" id="email" placeholder="Your email *" name="user_email" required><br>
 
-            <label class="standard-label" for="telephone">Telephone: </label>
-            <input type="tel" id="telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" name="user_phone">
+            <label class="standard-label" for="telephone">Telephone: </label><br>
+            <input type="tel" id="telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="Your mobile number"
+                name="user_phone"><br>
 
-            <label class="standard-label" for="message">Message: </label>
-            <textarea name="user_message" id="message" maxlength="240" required></textarea>
-            *Required field
-            Max. 240 characters
-
-            <input type="submit" class=" button messagebutton" value="Send message">
+            <label class="standard-label" for="message">Message: </label><br>
+            <textarea name="user_message" id="message" maxlength="240" placeholder="Your message * 
+(max. 240 characters)" required></textarea><br>
+            * Required field<br>
+            <br>
+            <input type="submit" class="button messagebutton" value="Send message">
         </form>
     </main>
 

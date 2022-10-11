@@ -77,12 +77,10 @@ Grade Color (Light Green): #bbebe3;
 .vector-animation {
   width: 450px;
   float: left;
-  padding: auto;
   margin-right: 20px;
 }
 
 .about,
-.contact,
 .work {
   text-align: center;
 }
@@ -99,6 +97,59 @@ Grade Color (Light Green): #bbebe3;
 .skill-table__cell {
   background-color: var(--primary-color);
   padding: 5px 10px;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2px;
+}
+
+.contact-infos,
+.contact-form {
+  padding: 30px 60px;
+}
+
+.contact-infos {
+  display: inline-block;
+}
+
+.contact-form {
+  width: 100%;
+}
+
+::placeholder {
+  color: var(--secondary-color);
+}
+
+input,
+textarea {
+  background-color: var(--primary-color);
+  border-radius: 5000px;
+  border: none;
+  padding: 10px 25px;
+  line-height: 1.5;
+  width: 100%;
+  margin: 0;
+}
+
+.messagebutton {
+  width: fit-content;
+}
+
+textarea {
+  height: 80px;
+  resize: none;
+}
+
+input:hover,
+input:focus,
+input:active,
+textarea:hover,
+textarea:focus,
+textarea:active {
+  opacity: 0.8;
+  outline: 0;
 }
 
 body {
@@ -254,6 +305,10 @@ button:focus,
   .project-list__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
+  }
+
+  .contact {
+    grid-template-columns: 1fr;
   }
 
   h1 {
