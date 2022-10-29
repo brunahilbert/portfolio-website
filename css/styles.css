@@ -168,6 +168,11 @@ textarea {
   resize: none;
 }
 
+.error-message {
+  color: red;
+  font-size: 0.8em;
+}
+
 input:hover,
 input:focus,
 input:active,
@@ -392,6 +397,7 @@ button:focus,
 }
 
 @media all and (max-width: 750px) {
+
   /* Shared code between 0px -> 750px */
   .project-list {
     grid-gap: 10px;

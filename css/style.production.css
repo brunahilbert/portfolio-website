@@ -17,9 +17,9 @@ Links Color (Green): #2c665d;
 Grade Color (Light Green): #bbebe3;
  */
 
-* {
+ * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* ---- HEADER ----------------------------------------------------- */
@@ -35,14 +35,14 @@ Grade Color (Light Green): #bbebe3;
 
 .page-header__item {
   -webkit-box-flex: 0;
-  -ms-flex: 0 1 200px;
-  flex: 0 1 200px;
+      -ms-flex: 0 1 200px;
+          flex: 0 1 200px;
 }
 
 .page-header .page-header__item:last-child {
   -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   text-align: right;
 }
 
@@ -219,6 +219,11 @@ textarea {
   resize: none;
 }
 
+.error-message {
+  color: red;
+  font-size: 0.8em;
+}
+
 input:hover,
 input:focus,
 input:active,
@@ -360,8 +365,8 @@ button:focus,
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
   background-color: #bbebe3;
 }
@@ -428,14 +433,14 @@ button:focus,
   .page-header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 15px;
   }
 
   .page-header__item {
     -ms-flex-preferred-size: 35px;
-    flex-basis: 35px;
+        flex-basis: 35px;
   }
 
   .page-header__item:first-child {
@@ -445,8 +450,8 @@ button:focus,
 
   .page-header .page-header__item:last-child {
     -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     text-align: center;
   }
 
@@ -495,6 +500,7 @@ button:focus,
 }
 
 @media all and (max-width: 750px) {
+
   /* Shared code between 0px -> 750px */
   .project-list {
     grid-gap: 10px;
@@ -593,45 +599,45 @@ button:focus,
 .bubble-square-bracket {
   opacity: 0;
   -webkit-animation: 15s opacity infinite linear;
-  animation: 15s opacity infinite linear;
+          animation: 15s opacity infinite linear;
 }
 
 .bubble-semicolon {
   -webkit-animation-delay: 2s;
-  animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 .bubble-else {
   -webkit-animation-delay: 3s;
-  animation-delay: 3s;
+          animation-delay: 3s;
 }
 
 .bubble-exclamation-equal {
   -webkit-animation-delay: 5s;
-  animation-delay: 5s;
+          animation-delay: 5s;
 }
 
 .bubble-brace {
   -webkit-animation-delay: 6s;
-  animation-delay: 6s;
+          animation-delay: 6s;
 }
 
 .bubble-equal {
   -webkit-animation-delay: 8s;
-  animation-delay: 8s;
+          animation-delay: 8s;
 }
 
 .bubble-less-than {
   -webkit-animation-delay: 10s;
-  animation-delay: 10s;
+          animation-delay: 10s;
 }
 
 .bubble-for {
   -webkit-animation-delay: 11s;
-  animation-delay: 11s;
+          animation-delay: 11s;
 }
 
 .bubble-square-bracket {
   -webkit-animation-delay: 13s;
-  animation-delay: 13s;
+          animation-delay: 13s;
 }
