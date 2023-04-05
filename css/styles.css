@@ -1,10 +1,7 @@
 /*
 Typography
-
 font-family: 'Cabin', sans-serif;
-
 Colors used
-
 Text Color (Gray): #333333;
 Links Color (Green): #2c665d;
 Grade Color (Light Green): #bbebe3;
@@ -79,7 +76,7 @@ Grade Color (Light Green): #bbebe3;
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 30px;
+  padding: 10px;
   max-width: 950px;
   margin: auto;
 }
