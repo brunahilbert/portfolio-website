@@ -1,11 +1,4 @@
 /*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
-/*
 Typography
 font-family: 'Cabin', sans-serif;
 Colors used
@@ -21,6 +14,10 @@ Secondary Color: #f28482;
 }
 
 /* ---- COMMON ----------------------------------------------------- */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 120px;
+}
 
 body {
   background-color: #f7ede2;
@@ -412,6 +409,10 @@ button:focus,
 }
 
 @media all and (max-width: 570px) {
+  html {
+    scroll-padding-top: 175px;
+  }
+
   .page-header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
