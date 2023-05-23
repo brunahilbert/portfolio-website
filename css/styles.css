@@ -77,6 +77,27 @@ a:focus {
   text-decoration: none;
 }
 
+a::before,
+a::after {
+  content: "";
+  font-size: 22px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+a:hover::before,
+a:hover::after {
+  opacity: 1;
+}
+
+a::before {
+  content: "< ";
+}
+
+a::after {
+  content: " >";
+}
+
 a:active {
   color: var(--secondary-color);
 }
@@ -92,7 +113,7 @@ button,
 
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
   background-color: var(--button-color);
-  color: white;
+  color: var(--text-color);
   text-decoration: none;
 
   /* adds spacing to the button */
@@ -114,15 +135,24 @@ button:focus,
   cursor: pointer;
 
   /* reduces the opacity of the button to 80% */
-  opacity: 0.6;
+  opacity: 0.8;
+  text-shadow: 0 0 10px var(--primary-color);
 }
 
-.cvbutton:visited {
-  color: white;
+button:visited,
+.button:visited {
+  color: var(--text-color);
 }
 
-.navigation-list__item--active {
-  text-decoration: none;
+.cvbutton::before,
+.cvbutton::after,
+.page-header__logo::before,
+.page-header__logo::after,
+.social-media a::before,
+.social-media a::after,
+.go-back-link::before,
+.go-back-link::after {
+  content: "";
 }
 
 /* ---- MAIN PAGE -------------------------------------------------- */
@@ -304,6 +334,7 @@ button:focus,
 
 .footer__icon {
   width: 30px;
+  margin: 0 5px 15px;
 }
 
 /* ---- CASE STUDIES ----------------------------------------------------- */
@@ -315,6 +346,11 @@ button:focus,
 
 .case-study-title h1 {
   margin-top: 0;
+}
+
+.go-back-link::before {
+  font-size: inherit;
+  content: "‹‹";
 }
 
 .my-movie-box-logo {
