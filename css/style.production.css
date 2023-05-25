@@ -345,6 +345,7 @@ button:visited,
 
 .work-page {
   padding-top: 60px;
+  background-color: #f28482;
 }
 
 .project-list {
@@ -357,21 +358,26 @@ button:visited,
 }
 
 .project-list__item {
-  display: inline-block;
-  background-color: #f28482;
+  background-color: #f7ede2;
   padding: 20px;
-  width: auto;
-  min-height: auto;
-  margin: 0;
+  -webkit-box-shadow: 1px 1px 10px #343a40;
+  box-shadow: 1px 1px 10px #343a40
 }
 
 .project-list__item img {
-  width: 90%;
+  width: 100%;
 }
 
-.project-list__item:last-child {
-  /* grid-column: 3/ 3;
-  grid-row: 2/ 4; */
+.project-list__item :last-child {
+  -ms-flex-line-pack: end;
+  align-content: end;
+  margin-top: auto;
+  bottom: 10px;
+  vertical-align: bottom;
+}
+
+.project-list__button {
+  margin: 3px;
 }
 
 /* ---- CONTACT ----------------------------------------------------- */
