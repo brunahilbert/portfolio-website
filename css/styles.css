@@ -247,23 +247,25 @@ button:visited,
   grid-template-columns: 2/ 2;
 }
 
-.about__table {
-  margin: auto;
+/* ---- DEV SKILLS ----------------------------------------------------- */
+
+.dev-skills {
+  display: flex;
+  margin-top: 80px;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  padding: 1.5em;
+  background: var(--button-color);
 }
 
-.skill-table {
-  max-width: 700px;
-  margin: auto;
+.dev-skills__item {
   text-align: center;
-}
-
-.skill-table__row {
-  background-color: var(--tertiary-color);
-}
-
-.skill-table__cell {
-  background-color: var(--tertiary-color);
-  padding: 5px 10px;
+  margin: 0.3em;
+  padding: 0.5em;
+  flex-grow: 1;
+  flex-shrink: 1;
+  background: var(--text-color);
+  text-transform: uppercase;
 }
 
 /* ---- WORK ----------------------------------------------------- */
