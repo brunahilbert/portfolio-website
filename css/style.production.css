@@ -105,21 +105,22 @@ button {
   font-family: inherit;
 
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: #f7b3b1;
-  color: #333;
+  background-color: #343a40;
+  color: white;
   text-decoration: none;
 
   /* adds spacing to the button */
-  padding: 10px;
-  border-radius: 5px;
+  padding: 6px 12px;
+  border-radius: 10px;
 
   /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  -o-transition: transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 
-  /* transition: [trans.-property *] [trans.-duration *] [trans.-timing-function (default="ease")] [trans.-delay (default="0")] */
-  -webkit-transition: 0.5s opacity;
-  -o-transition: 0.5s opacity;
-  transition: 0.5s opacity;
 }
 
 .button {
@@ -131,65 +132,67 @@ button {
   font-family: inherit;
 
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: #f7b3b1;
-  color: #333;
+  background-color: #343a40;
+  color: white;
   text-decoration: none;
 
   /* adds spacing to the button */
-  padding: 10px;
-  border-radius: 5px;
+  padding: 6px 12px;
+  border-radius: 10px;
 
   /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  -o-transition: transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 
-  /* transition: [trans.-property *] [trans.-duration *] [trans.-timing-function (default="ease")] [trans.-delay (default="0")] */
-  -webkit-transition: 0.5s opacity;
-  -o-transition: 0.5s opacity;
-  transition: 0.5s opacity;
 }
 
 button:hover {
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
-
-  /* reduces the opacity of the button to 80% */
-  opacity: 0.8;
-  text-shadow: 0 0 10px #f7ede2;
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  text-shadow: 0 0 10px #f7ede2,
+    0 0 25px #f7ede2;
 }
 
 button:focus {
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
-
-  /* reduces the opacity of the button to 80% */
-  opacity: 0.8;
-  text-shadow: 0 0 10px #f7ede2;
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  text-shadow: 0 0 10px #f7ede2,
+    0 0 25px #f7ede2;
 }
 
 .button:hover {
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
-
-  /* reduces the opacity of the button to 80% */
-  opacity: 0.8;
-  text-shadow: 0 0 10px #f7ede2;
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  text-shadow: 0 0 10px #f7ede2,
+    0 0 25px #f7ede2;
 }
 
 .button:focus {
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
-
-  /* reduces the opacity of the button to 80% */
-  opacity: 0.8;
-  text-shadow: 0 0 10px #f7ede2;
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  text-shadow: 0 0 10px #f7ede2,
+    0 0 25px #f7ede2;
 }
 
-button:visited {
-  color: #333;
-}
-
+button:visited,
 .button:visited {
-  color: #333;
+  color: white;
 }
 
 .cvbutton::before,
@@ -199,7 +202,13 @@ button:visited {
 .social-media a::before,
 .social-media a::after,
 .go-back-link::before,
-.go-back-link::after {
+.go-back-link::after,
+.contact-infos a::before,
+.contact-infos a::after,
+.project-list__item a::before,
+.project-list__item a::after,
+.case-study__button::before,
+.case-study__button::after {
   content: "";
 }
 

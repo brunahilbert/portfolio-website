@@ -9,8 +9,8 @@ Secondary Color: #f28482;
  */
 
 :root {
-  --text-color: #333;
-  --button-color: #f7b3b1;
+  --text-color: #24282c;
+  --button-color: #343a40;
   --visited-link-color: #173530;
   --primary-color: #f7ede2;
   --secondary-color: #f28482;
@@ -113,18 +113,17 @@ button,
 
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
   background-color: var(--button-color);
-  color: var(--text-color);
+  color: white;
   text-decoration: none;
 
   /* adds spacing to the button */
-  padding: 10px;
-  border-radius: 5px;
+  padding: 6px 12px;
+  border-radius: 10px;
 
   /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
 
-  /* transition: [trans.-property *] [trans.-duration *] [trans.-timing-function (default="ease")] [trans.-delay (default="0")] */
-  transition: 0.5s opacity;
 }
 
 button:hover,
@@ -133,15 +132,14 @@ button:focus,
 .button:focus {
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
-
-  /* reduces the opacity of the button to 80% */
-  opacity: 0.8;
-  text-shadow: 0 0 10px var(--primary-color);
+  transform: scale(1.05);
+  text-shadow: 0 0 10px var(--primary-color),
+    0 0 25px var(--primary-color);
 }
 
 button:visited,
 .button:visited {
-  color: var(--text-color);
+  color: white;
 }
 
 .cvbutton::before,
@@ -151,7 +149,13 @@ button:visited,
 .social-media a::before,
 .social-media a::after,
 .go-back-link::before,
-.go-back-link::after {
+.go-back-link::after,
+.contact-infos a::before,
+.contact-infos a::after,
+.project-list__item a::before,
+.project-list__item a::after,
+.case-study__button::before,
+.case-study__button::after {
   content: "";
 }
 
