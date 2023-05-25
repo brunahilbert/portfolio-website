@@ -438,13 +438,17 @@ button:visited,
 #footer {
   position: absolute;
   bottom: 0;
-  height: 95px;
+  height: 145px;
   width: 100%;
 }
 
 .footer__icon {
   width: 30px;
-  margin: 0 5px 15px;
+  margin: 0 5px;
+}
+
+.footer__impressum {
+  font-size: smaller;
 }
 
 /* ---- CASE STUDIES ----------------------------------------------------- */
