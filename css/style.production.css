@@ -21,7 +21,7 @@ html {
 
 body {
   background-color: #f7ede2;
-  color: #333;
+  color: #24282c;
   font-family: 'Cabin', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -56,12 +56,17 @@ span {
   color: white;
 }
 
+b {
+  background-color: #f7b3b1;
+}
+
 a {
-  color: #333;
+  color: #24282c;
+  white-space: nowrap;
 }
 
 a:visited {
-  color: #333;
+  color: #24282c;
 }
 
 a:hover,
@@ -273,6 +278,7 @@ button:visited,
 .home__message a {
   font-size: 18px;
   color: #f7ede2;
+  color: white;
 }
 
 /* ---- ABOUT PAGE -------------------------------------------------- */
@@ -398,7 +404,6 @@ button:visited,
   -ms-flex-item-align: right;
   -ms-grid-row-align: right;
   align-self: right;
-
 }
 
 .contact-infos {
@@ -564,7 +569,6 @@ button:visited,
 
 .case-study-retrospective__link a {
   margin: 20px;
-  white-space: nowrap;
 }
 
 /* ---- MEDIA QUERIES ----------------------------------------------------- */

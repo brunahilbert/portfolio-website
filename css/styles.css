@@ -64,8 +64,13 @@ span {
   color: white;
 }
 
+b {
+  background-color: var(--tertiary-color);
+}
+
 a {
   color: var(--text-color);
+  white-space: nowrap;
 }
 
 a:visited {
@@ -213,7 +218,7 @@ button:visited,
 
 .home__message a {
   font-size: 18px;
-  color: #f7ede2;
+  color: white;
 }
 
 /* ---- ABOUT PAGE -------------------------------------------------- */
@@ -317,7 +322,6 @@ button:visited,
   max-width: 400px;
   margin: auto;
   align-self: right;
-
 }
 
 .contact-infos {
@@ -466,7 +470,6 @@ button:visited,
 
 .case-study-retrospective__link a {
   margin: 20px;
-  white-space: nowrap;
 }
 
 /* ---- MEDIA QUERIES ----------------------------------------------------- */
