@@ -280,8 +280,8 @@ button:visited,
 .about-page {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 40%;
+  grid-template-columns: 1fr 40%;
   margin-top: 40px;
 }
 
@@ -296,8 +296,8 @@ button:visited,
   margin-bottom: auto;
 }
 
-.about__info h1 {
-  text-align: center;
+.about__message p {
+  text-align: left;
 }
 
 .about__portrait {
