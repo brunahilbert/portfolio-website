@@ -747,13 +747,13 @@ button:visited,
   }
 }
 
-@media all and (min-width: 781px) and (max-width: 1474px) {
+@media all and (min-width: 781px) and (max-width: 1563px) {
   .about__info {
     padding-right: 0;
   }
 }
 
-@media all and (min-width: 1475px) {
+@media all and (min-width: 1564px) {
   .about__info {
     background-color: var(--secondary-color);
     margin-left: 10%;
