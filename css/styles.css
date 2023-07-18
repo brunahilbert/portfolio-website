@@ -231,13 +231,12 @@ button:visited,
 }
 
 .about__info {
+  display: flex;
+  align-items: center;
   width: 100%;
   height: 100%;
   padding: 20px 50px;
-  text-align: center;
   grid-template-columns: 1/ 1;
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 .about__message p {
