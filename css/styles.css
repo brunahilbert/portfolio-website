@@ -12,9 +12,9 @@ Secondary Color: #f28482;
   --text-color: #24282c;
   --button-color: #343a40;
   --visited-link-color: #173530;
-  --primary-color: #f7ede2;
-  --secondary-color: #f28482;
-  --tertiary-color: #f7b3b1;
+  --primary-color: #fff;
+  --secondary-color: #608abf;
+  --tertiary-color: #b2c6df;
 }
 
 * {
@@ -754,6 +754,16 @@ button:visited,
 }
 
 @media all and (min-width: 1475px) {
+  .case-study-about-client-side {
+    grid-template-columns: 40% 1fr;
+  }
+
+  .case-study-retrospective {
+    grid-template-columns: 30% 1fr;
+  }
+}
+
+@media all and (min-width: 1515px) {
   .about__info {
     background-color: var(--secondary-color);
     margin-left: 10%;
@@ -765,13 +775,6 @@ button:visited,
     border-radius: 0%;
   }
 
-  .case-study-about-client-side {
-    grid-template-columns: 40% 1fr;
-  }
-
-  .case-study-retrospective {
-    grid-template-columns: 30% 1fr;
-  }
 }
 
 @media all and (min-width: 1400px) {
